@@ -2,13 +2,14 @@
 
 \NeedsTeXFormat{LaTeX2e} %
 \ProvidesClass{tech}
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 
 % DECLARING OPTIONS
-\usepackage{listings}
-\usepackage{amsmath}
+
 \newcommand\tab[1][1cm]{\hspace*{#1}}
 
-\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
+%\documentclass{article}
+
 
 
 % PROCESSING OPTIONS
@@ -24,6 +25,7 @@
 \RequirePackage[usenames]{color}
 \RequirePackage{babel}
 \RequirePackage{enumitem}
+\RequirePackage{listings}
 
 \geometry{bindingoffset=10mm, lmargin=20mm, rmargin=20mm, tmargin=25mm, bmargin=25mm, foot=10mm, head=10mm}
 
